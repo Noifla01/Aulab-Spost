@@ -21,12 +21,12 @@
                     </div>
                 @endif
 
-                <form class="card p-5 shadow" action="{{route('register')}}" method="post">
+                <form class="card p-5 shadow" action="{{route('login')}}" method="post">
                     @csrf
 
                     <div class="mb-3">
-                        <label for="username" class="form-label">Username</label>
-                        <input name="name" type="text" class="form-control" id="username" value="{{old('name')}}">
+                        <label for="email" class="form-label">Email</label>
+                        <input name="email" type="email" class="form-control" id="email" value="{{old('email')}}">
                     </div>
 
                     <div class="mb-3">
@@ -34,7 +34,7 @@
                         <input name="password" type="password" class="form-control" id="Password">
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Registrati</button>
+                    <button type="submit" class="btn btn-primary">Accedi</button>
                     <p class="small mt-2">Non sei registrato?<a href="{{route('register')}}">Clicca qui!</a></p>
                 </form>
 

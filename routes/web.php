@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +22,6 @@ use App\Http\Controllers\PublicController;
 
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
 
-// Route::get('/register', [PublicController::class, 'register'])->name('register');
+Route::get('/article/create', [ArticleController::class,'create'])->name('article.create');
+
+Route::get('/article/store', [ArticleController::class,'store'])->name('article.store');

@@ -6,7 +6,7 @@
 
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-    <title>The Aulab Post</title>
+    <title class="">The Aulab sPost</title>
 </head>
 <body>
     <x-navbar />
