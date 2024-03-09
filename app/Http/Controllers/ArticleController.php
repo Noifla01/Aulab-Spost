@@ -4,9 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller
 {
+    public function __construct()
+    {   
+        $this->middleware('auth')->except('index','show');
+    }
     /**
      * Display a listing of the resource.
      */
@@ -36,17 +41,17 @@ class ArticleController extends Controller
             'category'=> 'required',
         ]);
 
-        Article::create([
+        $article = Article::create([
             'title'=> $request->title,
             'subtitle'=> $request->subtitle,
             'body'=> $request->body,
             'image'=> $request->file('image')->store('public/images'),
             'category_id'=> $request->category,
-            user_id => Auth::user()->id,
+            'user_id' => Auth::user()->id
             ]);
             return redirect(route('homepage'))->with('message', 'Articolo creato correttamente');
     }
-
+    
     /**
      * Display the specified resource.
      */

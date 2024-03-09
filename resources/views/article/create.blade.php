@@ -23,7 +23,7 @@
                     </div>
                 @endif
 
-                <form class="card p-5 shadow" action="{{route('article.store')}}" method="POST" enctype="multipart/form-data">
+                <form action="{{route('article.store')}}" class="card p-5 shadow" method="POST" enctype="multipart/form-data">
                 @csrf
 
                 <div class="mb-3">
@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="subtitle" class="form-label">Sottotitolo::</label>
+                    <label for="subtitle" class="form-label">Sottotitolo:</label>
                     <input name="subtitle" type="text" class="form-control" id="subtitle" value="{{old('subtitle')}}">
                 </div>
             
