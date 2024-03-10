@@ -25,7 +25,7 @@
             category="{{ $article->category}}"
             data="{{ $article->created_at->format('d/m/Y')}}"
             user="{{ $article->user->name}}"
-            url="#"
+            url="{{route('article.show', compact('article'))}}"
             />
             </div>
             
