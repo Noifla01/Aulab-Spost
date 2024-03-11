@@ -12,9 +12,9 @@
             <div class="col-12 col-md-8">
                 <img src="{{Storage::url($article->image)}}" alt="" class="img-fluid my-3">
                 <div class="text-center">
-                    <h2> {{$article->user->name}} </h2>
+                    <h2> {{$user}} </h2>
                     <div class="my-3 text-muted fst-italic">
-                        <p>Redatto da {{$article->user->name}} il {{$article->created_at->format('d/m/Y')}} </p>
+                        <p>Redatto da {{$user}} il {{$article->created_at->format('d/m/Y')}} </p>
                     </div>
                 </div>
                 <hr>

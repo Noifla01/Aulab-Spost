@@ -34,3 +34,4 @@ Route::get('/article/show/{article}', [ArticleController::class, 'show'])->name(
 
 Route::get('/article/category/{category}', [ArticleController::class, 'byCategory'])->name('article.byCategory');
 
+Route::get('/article/user/{user}', [ArticleController::class, 'byUser'])->name('article.byUser');
