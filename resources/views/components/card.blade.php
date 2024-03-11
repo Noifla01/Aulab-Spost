@@ -3,7 +3,7 @@
     <div class="card-body">
         <h5 class="card-title">{{ $title }}</h5>
         <p class="card-text"> {{ $subtitle }}</p>
-        <p class="small text-muted d-flex justify-content-center align-items-center"> {{$category}} </p>
+        <a href="{{ $urlCategory }}" class="small text-muted d-flex justify-content-center align-items-center">  </a>
     </div>
     
     <div class="card-footer text-muted d-flex justify-content-center align-items-center"> Redatto il {{$data}} da {{ $user }}
