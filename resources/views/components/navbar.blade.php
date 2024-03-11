@@ -50,6 +50,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('article.create')}}">Inserisci un articolo</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('article.index')}}">Tutti gli articoli</a>
+                        </li>
 
                         <div class="col-12 col-md-6">
                             <form class="d-flex mx-4" role="search">

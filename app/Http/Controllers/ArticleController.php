@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -20,7 +21,11 @@ class ArticleController extends Controller
         $articles = Article::orderBy('created_at','desc')->get();
         return view('article.index', compact('articles'));
     }
-
+    
+    public function byCategory(Category $category){
+        $articles = $category->articles()->orderBy('created_at','desc')->get();
+        return view('article.by-category', compact('category','articles'));
+    }
     /**
      * Show the form for creating a new resource.
      */
@@ -84,4 +89,6 @@ class ArticleController extends Controller
     {
         //
     }
+
+    
 }
