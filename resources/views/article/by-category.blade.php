@@ -27,6 +27,8 @@
             user="{{ $article->user->name}}"
             url="{{route('article.show', compact('article'))}}"
             urlCategory="{{route('article.byCategory', ['category'=> $article->category->id])}}"
+            urlUser="{{route('article.byUser', ['user'=> $article->user->id])}}"
+            check="category"
             />
             </div>
             
