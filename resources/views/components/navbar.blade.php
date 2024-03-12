@@ -41,7 +41,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="{{route('login')}}">Accedi</a></li>
                                     <li><a class="dropdown-item" href="{{route('register')}}">Registrati</a></li>
-                                    <li><a class="dropdown-item" href="{{route('register')}}">Contattaci</a></li>
+                                    <li><a class="dropdown-item" href="{{route('register')}}">Lavora con noi</a></li>
                                 </ul>
                             </li>
                             @endguest

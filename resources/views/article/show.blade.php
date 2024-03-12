@@ -17,7 +17,10 @@
                         <p>Redatto da {{$article->user->name}} il {{$article->created_at->format('d/m/Y')}} </p>
                     </div>
                 </div>
+
+                <p> {{$article->subtitle}} </p>
                 <hr>
+                
                 <p> {{$article->body}} </p>
                 <div class="text-center"> 
                     @if(str_contains(url()->previous(),"user"))
