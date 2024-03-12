@@ -19,8 +19,14 @@
                 </div>
                 <hr>
                 <p> {{$article->body}} </p>
-                <div class="text-center">
-                    <a href="{{route('article.index')}}" class="btn btn-info text-white my-5">Torna indietro</a>
+                <div class="text-center"> 
+                    @if(str_contains(url()->previous(),"user"))
+                    <a href="{{route('article.byUser', ['user'=>$article->user])}}" class="btn btn-info text-white my-5">Torna indietro</a>
+                    @elseif(str_contains(url()->previous(),"category"))
+                    <a href="{{route('article.byCategory', ['category'=>$article->category])}}" class="btn btn-info text-white my-5">Torna indietro</a>
+                    @else
+                    <a href="{{route('homepage')}}" class="btn btn-info text-white my-5">Torna indietro</a>
+                    @endif
                 </div>
             </div>
         </div>

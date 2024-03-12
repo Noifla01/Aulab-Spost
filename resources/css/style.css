@@ -1,0 +1,13 @@
+:root{
+--bluenavy: rgb(0, 29, 61);
+}
+
+.bg-bluenavy{
+    background-color: rgb(0, 29, 61);
+}
+
+
+.nav-item{
+    list-style-type: none;
+}
+

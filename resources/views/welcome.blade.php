@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row justify-content-center text-center bg-secondary py-5">
             <div class="col-12 col-md-6">
-                <h1 class="display-5 fw-bold"> The Aulab Post </h1>
+                <h1 class="display-5 fw-bold"> The Aulab sPost </h1>
             </div>
         </div>
     </div>
@@ -26,7 +26,8 @@
             data="{{ $article->created_at->format('d/m/Y')}}"
             user="{{ $article->user->name}}"
             url="{{route('article.show', compact('article'))}}"
-            urlCategory=" {{route('article.byCategory', ['category'=> $article->category->id]) }}"
+            urlCategory="{{route('article.byCategory', ['category'=> $article->category->id])}}"
+            urlUser="{{route('article.byUser', ['user'=> $article->user->id])}}"
             />
             </div>
             
