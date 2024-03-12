@@ -19,7 +19,7 @@ use App\Http\Controllers\ArticleController;
 //     return view('welcome');
 // });
 
-
+//HOMEPAGE
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
 
 
