@@ -9,7 +9,7 @@
 <body>
     <h1>Abbiamo ricevuto la tua richiesta</h1>
     <h4>Richiesta per il ruolo di {{ $info['role']}} </h4>
-    <p>Ricevuta da {{$info ['email']}} </p>
+    <p>Ricevuta da :{{$info ['email']}} </p>
 
     <h4>Messaggio:</h4>
     <p>{{$info['message']}}</p>
