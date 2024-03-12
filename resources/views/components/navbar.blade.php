@@ -50,7 +50,7 @@
                                 <a class="nav-link" href="{{route('article.create')}}">Inserisci un articolo</a>
                             </li>
                             <li class="nav-item mx-3">
-                                <a class="nav-link" href="{{route('homepage')}}">Tutti gli articoli</a>
+                                <a class="nav-link" href="{{route('article.index')}}">Tutti gli articoli</a>
                             </li>
                         </div>
                     </div>
