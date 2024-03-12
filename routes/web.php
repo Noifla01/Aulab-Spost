@@ -28,7 +28,7 @@ Route::get('/article/create', [ArticleController::class,'create'])->name('articl
 
 Route::post('/article/store', [ArticleController::class,'store'])->name('article.store');
 
-
+Route::get('/article/index', [ArticleController::class, 'index'])->name('article.index');    
 
 Route::get('/article/show/{article}', [ArticleController::class, 'show'])->name('article.show');
 
