@@ -12,6 +12,16 @@
                             <ul class="navbar-nav my-2">
                                 {{-- UTENTE AUTORIZZATO --}}
                                 @auth
+                                @if (Auth::user()->is_admin)
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{route('admin.dashboard')}}">Dashboard Admin</a>
+                                    </li>
+                                @endif
+                                @if (Auth::user()->is_revisor)
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{route('revisor.dashboard')}}">Dashboard Revisor</a>
+                                    </li>
+                                @endif
                                 <li class="nav-item dropdown mx-4">
                                     <a class="nav-link dropdown-toggle text-dark" href="{{route('homepage')}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Ciao {{Auth::user()->name}}!
