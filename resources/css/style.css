@@ -1,13 +1,53 @@
+.primaryFont{
+    font-family: "Bitter", serif;
+}
+
+.secondaryFont{
+    font-family: "Angkor", serif;
+}
+
 :root{
---bluenavy: rgb(0, 29, 61);
+--dark-grey: #212529ed;
+--white: #dee2e6;
 }
 
-.bg-bluenvy{
-    background-color: rgb(0, 29, 61);
+.bg-dark-grey{
+    background-color: var(--dark-grey);
 }
 
+.bg-mywhite{
+    background-color: var(--white);
+}
+
+body{
+    background-color: var(--white);
+}
 
 .nav-item{
     list-style-type: none;
 }
 
+.navbar{
+    background: transparent;
+    backdrop-filter: blur(14px);
+}
+
+h1{
+    letter-spacing: 10px;
+}
+
+.h1-img{
+    background-image: url(./media/giornale.jpeg);
+}
+
+.cardBody{
+    border-radius: 10px;
+}
+
+.card-image{
+    height: 17rem;
+}
+
+.card-btn{
+background-color: var(--dark-grey);
+}
