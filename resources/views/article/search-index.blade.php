@@ -3,23 +3,17 @@
     <div class="container">
         <div class="row justify-content-center text-center bg-secondary py-5">
             <div class="col-12 col-md-6">
-                <h1 class="display-5 fw-bold"> The Aulab sPost </h1>
+                <h1 class="display-5 fw-bold"> Tutti glia rticoli per: {{$query}} </h1>
             </div>
         </div>
     </div>
     
-    @if (session('message'))
-        <div class="alert alert-success text-center">
-            {{ session('message')}}
-        </div>
-    @endif
 
     <div class="container my-5">
         <div class="row justify-content-center">
             @foreach ($articles as $article)
             <div class="col-12 col-md-3">
                 <x-card
-            :tags="$article->tags"
             title="{{ $article->title}}"
             subtitle="{{ $article->subtitle}}"
             image="{{ $article->image}}"

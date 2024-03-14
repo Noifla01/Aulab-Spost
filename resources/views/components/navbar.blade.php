@@ -67,10 +67,10 @@
                     </div>
                     
                     <div class="col-12 col-md-3">
-                        {{-- <form class="d-flex mx-4" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form> --}}
+                        <form class="d-flex mx-4" method="GET" action="{{route('article.search')}}">
+                            <input class="form-control me-2" type="search" placeholder="Cosa cerchi?" aria-label="Search" name="query">
+                            <button class="btn btn-outline-info" type="submit">Cerca</button>
+                        </form>
                     </div>
                 </div>
             </nav>
