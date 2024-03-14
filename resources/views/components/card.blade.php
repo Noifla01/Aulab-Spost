@@ -1,15 +1,17 @@
-<div class="card">
-    <img src="{{ Storage::url($image) }}" alt="" class="card-img-top">
-    <div class="card-body">
-        <h5 class="card-title">{{ $title }}</h5>
-        <p class="card-text"> {{ $subtitle }}</p>
-        <a href="{{$urlCategory}}" class="small text-muted d-flex justify-content-center align-items-center"> {{$category}} </a>
+<div class="container  my-3">
+    <div class="row ">
+        <div class="card px-0 cardBody">
+            <img src="{{ Storage::url($image) }}" alt="" class="card-image cardBody">
+            <div class="card-body">
+                <h5 class="card-title primaryFont text-capitalize">{{ $title }}</h5>
+                <p class="card-text primaryFont text-capitalize"> {{ $subtitle }}</p>
+                <a href="{{$urlCategory}}" class="small text-muted text-capitalize d-flex justify-content-center align-items-center"> {{$category}} </a>
+            </div>
+            
+            <div class="card-footer px-0 ps-2 text-muted d-flex justify-content-around align-items-center"> Redatto il {{$data}} da <a class="text-muted text-capitalize" href="{{$urlUser}}">{{$user}}</a>
+                <a href="{{$url}}" class="btn card-btn text-white">Leggi</a>
+            </div>
+        </div>
+        
     </div>
-    
-    <div class="card-footer text-muted d-flex justify-content-center align-items-center"> Redatto il {{$data}} da <a class="text-uppercase" href="{{$urlUser}}">{{$user}}</a>
-    <a href="{{$url}}" class="btn btn-info text-white">Leggi</a>
 </div>
-
-
-</div>
-

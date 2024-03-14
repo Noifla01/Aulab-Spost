@@ -1,9 +1,9 @@
 <x-layout>
     
-    <div class="container">
-        <div class="row justify-content-center text-center bg-secondary py-5">
+    <div class="container h1-img">
+        <div class="row justify-content-center text-center py-5">
             <div class="col-12 col-md-6">
-                <h1 class="display-5 fw-bold"> The Aulab sPost </h1>
+                <h1 class="display-5 fw-bold secondaryFont"> The Aulab sPost </h1>
             </div>
         </div>
     </div>
@@ -14,10 +14,10 @@
         </div>
     @endif
 
-    <div class="container my-5">
+    <div class="container my-4">
         <div class="row justify-content-center">
             @foreach ($articles as $article)
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-4">
                 <x-card
             title="{{ $article->title}}"
             subtitle="{{ $article->subtitle}}"
