@@ -19,6 +19,14 @@
     background-color: var(--white);
 }
 
+.text-dark-grey{
+    color: var(--dark-grey);
+}
+
+.text-mywhite{
+    color: var(--white);
+}
+
 body{
     background-color: var(--white);
 }
@@ -28,8 +36,10 @@ body{
 }
 
 .navbar{
-    background: transparent;
-    backdrop-filter: blur(14px);
+    width: auto;
+    background-color: var(--dark-grey);
+    margin-bottom: 5px;
+    color: var(--white);
 }
 
 h1{
@@ -42,10 +52,11 @@ h1{
 
 .cardBody{
     border-radius: 10px;
+    height: 30rem;
 }
 
 .card-image{
-    height: 17rem;
+    height: 16rem;
 }
 
 .card-btn{
