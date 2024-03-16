@@ -62,4 +62,30 @@ public function setWriter(User $user){
 
     }
 
+    public function editCategory(Request $request, Category $category){
+        $request->validate([
+            'name'=> 'required|unique:categories',
+
+        ]);
+        $category->update([
+            'name'=> strtolower ($request->name),
+        ]);
+        return redirect(route('admin.dashboard'))->with('message','Hai aggiornato la categoria correttamente!');
 }
+
+public function deleteCategory(Category $category){
+    $category->delete();
+
+    return redirect(route('admin.dashboard'))->with('message','Hai cancellato la categoria correttamente!');
+}
+
+public function storeCategory(Request $request){
+    Category::create([
+        'name'=> strtolower($request->name),
+    ]);
+    return redirect(route('admin.dashboard'))->with('message','Hai inserito una nuova categoria correttamente!');
+}
+
+}
+
+

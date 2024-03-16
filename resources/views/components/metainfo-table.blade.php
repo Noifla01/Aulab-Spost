@@ -33,7 +33,7 @@
                 </td>
                     @else(
                         <td>
-                    <form action="" method="">
+                    <form action="{{route('admin.editCategory',['category'=> $metaInfo])}}" method="POST">
                         @csrf
                         @method('put')
                         <input type="text" name="name" placeholder="Nuovo nome categoria" class="form-control w-50 d-inline">
@@ -41,7 +41,7 @@
                     </form>
                 </td>
                 <td>
-                    <form action="" method="">
+                    <form action="{{route('admin.deleteTag',['category'=> $metaInfo])}}" method="POST">
                         @csrf
                         @method('delete')
                         
