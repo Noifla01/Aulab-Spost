@@ -12,6 +12,15 @@
         {{session('message')}}
     </div>
     @endif
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($error->all() as $error)
+            <li>{{$error}}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
     <div class="container my-5">
         <div class="row justify-center">
             <div class="col-12 shadow">
