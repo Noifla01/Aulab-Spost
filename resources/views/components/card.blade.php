@@ -24,7 +24,7 @@
             </div>
             
             <div class="card-footer px-0 ps-2 text-muted d-flex justify-content-around align-items-center"> Redatto il {{$data}} da <a class="text-muted text-capitalize" href="{{$urlUser}}">{{$user}}</a>
-                <a href="{{$url}}" class="btn card-btn text-secondary">Leggi</a>
+                <a href="{{$url}}" class="btn button-30 text-secondary">Leggi</a>
             </div>
         </div>
         

@@ -62,7 +62,7 @@
                 </div>
                 
                 <div class="mt-2">
-                    <button class="btn btn-info text-white">Inserisci un articolo</button>
+                    <button class="btn button-30">Inserisci un articolo</button>
                     <a class="btn btn-outline-info" href="{{route('homepage')}}">Torna alla home</a>
                 </div>
 
