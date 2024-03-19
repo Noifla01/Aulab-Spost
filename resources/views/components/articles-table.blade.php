@@ -21,7 +21,7 @@
                 @else
                     <form action="{{route('revisor.undoArticle', compact('article'))}}" method="POST" >
                     @csrf
-                        <button class="btn button-30 text-dange">Riporta in revisione</button>
+                        <button class="btn button-30 text-danger">Riporta in revisione</button>
                     </form>
                 @endif
             </td>
