@@ -1,9 +1,9 @@
-<div class="container bg-mywhite sticky-top navbar py-0">
+<div class="container sticky-top navbar py-0">
     <div class="row justify-content-center w-100 m-0">
         <div class="col-12 col-md-3 w-100 px-0 ">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand fs-4 fw-bolder secondaryFont text-mywhite" href="{{route('homepage')}}">The Aulab sPost</a>
+                    <a class="navbar-brand fs-4 fw-bolder secondaryFont" href="{{route('homepage')}}">The Aulab sPost</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -14,7 +14,7 @@
                                 @auth
                                 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle primaryFont text-mywhite" href="{{route('homepage')}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle primaryFont fw-bold" href="{{route('homepage')}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Ciao {{Auth::user()->name}}!
                                     </a>
                                     <ul class="dropdown-menu">
@@ -48,7 +48,7 @@
                             {{-- GUEST --}}
                             @guest
                             <li class="nav-item dropdown mx-5">
-                                <a class="nav-link dropdopn-toggle primaryFont text-mywhite" href="{{route('homepage')}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdopn-toggle primaryFont fw-bold" href="{{route('homepage')}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Area personale
                                 </a>
                                 <ul class="dropdown-menu">
@@ -63,11 +63,11 @@
 
 
                             <li class="nav-item mx-4">
-                                <a class="nav-link primaryFont hover text-mywhite" href="{{route('article.create')}}">Inserisci un articolo</a>
+                                <a class="nav-link primaryFont hover fw-bold" href="{{route('article.create')}}">Inserisci un articolo</a>
 
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link primaryFont text-mywhite" href="{{route('article.index')}}">Tutti gli articoli</a>
+                                <a class="nav-link primaryFont fw-bold" href="{{route('article.index')}}">Tutti gli articoli</a>
                             </li>
                         </div>
                     </div>

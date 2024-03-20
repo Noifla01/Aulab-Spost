@@ -1,8 +1,8 @@
 <x-layout>
 
-    <div class="container-fluid p-5 bg-info text-center text-white">
-        <div class="row justify-content-center">
-            <h1 class="display-1">
+    <div class="container p-4 mt-4 text-center text-dark h1-img">
+        <div class="row justify-content-center h1-img">
+            <h1 class="display-5 fw-bold secondaryFont">
                 Modifica un articolo
             </h1>
         </div>

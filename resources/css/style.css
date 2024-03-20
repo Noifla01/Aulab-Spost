@@ -24,7 +24,12 @@
 }
 
 body{
-    background-color: rgba(182, 178, 178, 0.504);
+    background: linear-gradient(180deg,rgba(218, 212, 212, 0.391),rgba(170, 162, 162, 0.232)), url(./media/giornali.jpg);
+}
+
+.bg-container{
+background-color: rgb(227, 228, 220);
+background: linear-gradient(360deg,rgba(218, 212, 212, 0.445),rgba(59, 59, 59, 0.568)), url(./media/joe-woods-4Zaq5xY5M_c-unsplash.jpg);
 }
 
 .nav-item{
@@ -32,7 +37,7 @@ body{
 }
 
 .navbar{
-    background-color: var(--dark-grey);
+    background-image: linear-gradient(180deg,rgba(77, 74, 74, 0.452),rgba(0, 0, 0, 0.473)),url(./media/scott-webb-UjupleczBOY-unsplash.jpg);
 }
 
 h1{
@@ -40,18 +45,23 @@ h1{
 }
 
 .h1-img{
-    background-image: url(./media/giornale.jpeg);
+    background-image: linear-gradient(180deg,rgba(77, 74, 74, 0.452),rgba(0, 0, 0, 0.473)),url(./media/scott-webb-UjupleczBOY-unsplash.jpg);
 }
 
 .cardBody{
     height: 500px;
     width: 350px;
+    border: 0;
 }
 
 .card-img{
-    height: 16rem;
-    width: 17rem;
-    
+    height: 300px;
+    width: 350px;
+
+}
+
+.bgcard{
+    background-color: rgb(120, 120, 125);
 }
 
 .button-30 {

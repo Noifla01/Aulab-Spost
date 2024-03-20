@@ -1,9 +1,9 @@
 <x-layout>
     
-    <div class="container">
-        <div class="row justify-content-center text-center bg-secondary py-5">
+    <div class="container h1-img">
+        <div class="row justify-content-center text-center bg-secondary py-5 ">
             <div class="col-12 col-md-6">
-                <h1 class="display-5 fw-bold"> Tutti gli articoli per: {{$query}} </h1>
+                <h1 class="display-5 fw-bold secondaryFont"> Tutti gli articoli per: {{$query}} </h1>
             </div>
         </div>
     </div>

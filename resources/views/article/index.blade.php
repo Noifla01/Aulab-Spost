@@ -1,9 +1,9 @@
 <x-layout>
     
-    <div class="container">
-        <div class="row justify-content-center text-center bg-secondary py-5">
-            <div class="col-12 col-md-6">
-                <h1 class="display-5 fw-bold"> Tutti gli articoli </h1>
+    <div class="container h1-img mt-2">
+        <div class="row justify-content-center text-center  py-5 ">
+            <div class="col-12 col-md-6 ">
+                <h1 class="display-5 fw-bold secondaryFont"> Tutti gli articoli </h1>
             </div>
         </div>
     </div>
@@ -13,7 +13,7 @@
     <div class="container my-5">
         <div class="row justify-content-center">
             @foreach ($articles as $article)
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-4">
             <x-card
             :tags="$article->tags"
             title="{{ $article->title}}"

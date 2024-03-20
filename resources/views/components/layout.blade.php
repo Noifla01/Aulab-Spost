@@ -14,8 +14,12 @@
     <title>The Aulab sPost</title>
 </head>
 <body>
-    <x-navbar />
-    {{$slot}}
+    
+    <div class="container bg-container px-0 pb-2">
+        <x-navbar />
+        {{$slot}}
+    </div>
+    
     
     
 </body>

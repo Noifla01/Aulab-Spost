@@ -1,6 +1,6 @@
 <div class="container my-3">
     <div class="row justify-content-center">
-        <div class="card mb-3 cardBody d-flex justify-content-center">
+        <div class="card mb-3 cardBody px-0 bgcard">
             <img src="{{ Storage::url($image) }}" alt="" class="card-img">
             <div class="card-body">
                 <h5 class="card-title primaryFont text-capitalize d-flex justify-content-center">{{ $title }}</h5>
