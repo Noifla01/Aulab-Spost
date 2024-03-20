@@ -1,9 +1,9 @@
 <div class="container my-3">
-    <div class="row ">
-        <div class="card border-warning mb-3">
-            <img src="{{ Storage::url($image) }}" alt="" class="card-image cardBody">
+    <div class="row justify-content-center">
+        <div class="card mb-3 cardBody d-flex justify-content-center">
+            <img src="{{ Storage::url($image) }}" alt="" class="card-img">
             <div class="card-body">
-                <h5 class="card-title primaryFont text-capitalize">{{ $title }}</h5>
+                <h5 class="card-title primaryFont text-capitalize d-flex justify-content-center">{{ $title }}</h5>
                 <p class="card-text primaryFont text-capitalize"> {{ $subtitle }}</p>
                 @if($category)
                     <a href="{{$urlCategory}}" class="small text-muted d-flex justify-content-center align-items-center"> {{$category}} </a>
@@ -12,9 +12,11 @@
                         Non categorizzato
                     </p>
                 @endif
+                
+                <span class="text-muted small fst-italic">Tempo di lettura {{$readDuration}} min</span>
 
                 @if ($tags)
-                    <p class="fst-italic text-small-capitalize">
+                    <p class="fst-italic text-small-capitalize d-flex justify-content-center mt-2">
                         @foreach ($tags as $tag)
                             # {{ $tag->name }}
                         @endforeach

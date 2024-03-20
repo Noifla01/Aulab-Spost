@@ -7,7 +7,7 @@
 }
 
 :root{
-    --dark-grey: #212529ed;
+    --dark-grey: #3c4650eb;
     --white: #a8aec1;
 }
 
@@ -24,7 +24,7 @@
 }
 
 body{
-    background-color: var(--white);
+    background-color: rgba(182, 178, 178, 0.504);
 }
 
 .nav-item{
@@ -44,17 +44,13 @@ h1{
 }
 
 .cardBody{
-    border-radius: 10px;
-    height: 550px;
-    width: 400px;
+    height: 500px;
+    width: 350px;
 }
 
-.card-image{
+.card-img{
     height: 16rem;
     width: 17rem;
-    padding-left: 1px;
-    padding-right: 0px;
-    border-radius: 5px;
     
 }
 
