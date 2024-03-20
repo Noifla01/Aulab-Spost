@@ -7,8 +7,8 @@
 }
 
 :root{
---dark-grey: #212529ed;
---white: #dee2e6;
+    --dark-grey: #212529ed;
+    --white: #a8aec1;
 }
 
 .bg-dark-grey{
@@ -17,14 +17,6 @@
 
 .bg-mywhite{
     background-color: var(--white);
-}
-
-.text-dark-grey{
-    color: var(--dark-grey);
-}
-
-.text-mywhite{
-    color: var(--white);
 }
 
 body{
@@ -36,10 +28,8 @@ body{
 }
 
 .navbar{
-    width: auto;
-    background-color: var(--dark-grey);
-    margin-bottom: 5px;
-    color: var(--white);
+    background: transparent;
+    backdrop-filter: blur(14px);
 }
 
 h1{
@@ -52,13 +42,90 @@ h1{
 
 .cardBody{
     border-radius: 10px;
-    height: 30rem;
+    height: 550px;
+    width: 400px;
 }
 
 .card-image{
     height: 16rem;
+    width: 17rem;
+    padding-left: 1px;
+    padding-right: 0px;
+    border-radius: 5px;
+    
 }
 
 .card-btn{
-background-color: var(--dark-grey);
+    background-color: var(--dark-grey);
+}
+
+
+
+/* CSS */
+.button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(124, 88, 201, 0.4) 0 2px 4px,rgba(105, 89, 138, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+}
+
+.button-30:focus {
+    box-shadow: #7575cc 0 0 0 1.5px inset, rgba(88, 76, 114, 0.4) 0 2px 4px, rgba(111, 90, 158, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+    box-shadow: rgba(63, 52, 86, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-30:active {
+    box-shadow: #a0a0be 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+a {
+    position: relative;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
 }

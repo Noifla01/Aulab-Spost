@@ -31,7 +31,7 @@
                         <button type="submit" class="btn btn-danger text-white">Elimina</button>
                     </form>
                 </td>
-                    @else(
+                    @else 
                         <td>
                     <form action="{{route('admin.editCategory',['category'=> $metaInfo])}}" method="POST">
                         @csrf
@@ -41,14 +41,14 @@
                     </form>
                 </td>
                 <td>
-                    <form action="{{route('admin.deleteTag',['category'=> $metaInfo])}}" method="POST">
+                    <form action="{{route('admin.deleteTag',['tag'=> $metaInfo])}}" method="POST">
                         @csrf
                         @method('delete')
                         
                         <button type="submit" class="btn btn-danger text-white">Aggiorna</button>
                     </form>
                 </td>
-                    )
+                    
                 @endif
             </tr>
         @endforeach

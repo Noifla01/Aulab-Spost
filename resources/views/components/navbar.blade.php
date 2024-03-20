@@ -54,8 +54,12 @@
                             </li>
                             @endguest
                             
-                            <li class="nav-item">
-                                <a class="nav-link primaryFont" href="{{route('article.create')}}">Inserisci un articolo</a>
+
+
+
+                            <li class="nav-item mx-4">
+                                <a class="nav-link primaryFont hover" href="{{route('article.create')}}">Inserisci un articolo</a>
+
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link primaryFont" href="{{route('article.index')}}">Tutti gli articoli</a>
@@ -66,14 +70,37 @@
                     <div class="col-12 col-md-3">
                         <form class="d-flex" method="GET" action="{{route('article.search')}}">
                             <input class="form-control me-2" type="search" placeholder="Cosa cerchi?" aria-label="Search" name="query">
-                            <button class="btn btn-outline-info" type="submit">Cerca</button>
+                            <button class="btn button-30" type="submit">Cerca</button>
                         </form>
                     </div>
                 </div>
+                {{-- <script language="Javascript">
+                    
+                    function crea()
+                    {
+                    for (i = 0; i<crea.arguments.length; i++)
+                        this[i + 1] = crea.arguments[i];
+                    }
+                    
+                    let mesi = new crea('Gennaio','Febbraio','Marzo',
+                        'Aprile','Maggio','Giugno','Luglio','Agosto','Settembre',
+                        'Ottobre','Novembre','Dicembre');
+                    let date = new Date();
+                    let gg  = date.getDate();
+                    let mese = date.getMonth();
+                    let yy = date.getYear();
+                    let yyyy = (yy < 1000) ? yy + 1900 : yy;
+                    
+                    document.write(gg + " " + mesi[mese] + " " + yyyy);
+                    
+                    </script> --}}
             </nav>
         </div>
     </div>
 </div>
 
 
+
+<!-- HTML !-->
+{{-- <button class="button-30" role="button">Button 30</button> --}}
 
