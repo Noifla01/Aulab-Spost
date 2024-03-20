@@ -15,6 +15,8 @@
                 
                 <span class="text-muted small fst-italic">Tempo di lettura {{$readDuration}} min</span>
 
+                <span class="text-muted small fst-italic">Tempo di lettura {{$readDuration}} min</span>
+
                 @if ($tags)
                     <p class="fst-italic text-small-capitalize d-flex justify-content-center mt-2">
                         @foreach ($tags as $tag)

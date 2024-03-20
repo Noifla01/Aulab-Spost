@@ -30,6 +30,7 @@
             urlCategory="{{route('article.byCategory', ['category'=> $article->category->id])}}"
             urlUser="{{route('article.byUser', ['user'=> $article->user->id])}}"
             check="category"
+            readDuration="{{$article->readDuration()}}"
             />
             </div>
             

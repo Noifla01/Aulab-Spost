@@ -20,7 +20,6 @@
             <div class="col-12 col-md-4">
                 <x-card
             :tags="$article->tags"
-            
             title="{{ $article->title}}"
             subtitle="{{ $article->subtitle}}"
             image="{{ $article->image}}"
@@ -30,6 +29,7 @@
             url="{{route('article.show', compact('article'))}}"
             urlCategory="{{route('article.byCategory', ['category'=> $article->category->id])}}"
             urlUser="{{route('article.byUser', ['user'=> $article->user->id])}}"
+            readDuration="{{$article->readDuration()}}"
             />
             </div>
             

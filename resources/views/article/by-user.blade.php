@@ -19,7 +19,7 @@
             @foreach ($articles as $article)
             <div class="col-12 col-md-3">
                 <x-card
-                
+                :tags="$article->tags"
             title="{{ $article->title}}"
             subtitle="{{ $article->subtitle}}"
             image="{{ $article->image}}"
@@ -30,6 +30,7 @@
             urlCategory="{{route('article.byCategory', ['category'=> $article->category->id])}}"
             urlUser="{{route('article.byUser', ['user'=> $article->user->id])}}"
             check="user"
+            readDuration="{{$article->readDuration()}}"
             />
             </div>
             
