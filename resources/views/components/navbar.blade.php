@@ -48,7 +48,7 @@
                             {{-- GUEST --}}
                             @guest
                             <li class="nav-item dropdown mx-5">
-                                <a class="nav-link dropdopn-toggle primaryFont" href="{{route('homepage')}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdopn-toggle primaryFont text-mywhite" href="{{route('homepage')}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Area personale
                                 </a>
                                 <ul class="dropdown-menu">
@@ -63,11 +63,11 @@
 
 
                             <li class="nav-item mx-4">
-                                <a class="nav-link primaryFont hover" href="{{route('article.create')}}">Inserisci un articolo</a>
+                                <a class="nav-link primaryFont hover text-mywhite" href="{{route('article.create')}}">Inserisci un articolo</a>
 
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link primaryFont" href="{{route('article.index')}}">Tutti gli articoli</a>
+                                <a class="nav-link primaryFont text-mywhite" href="{{route('article.index')}}">Tutti gli articoli</a>
                             </li>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                     <div class="col-12 col-md-3">
                         <form class="d-flex" method="GET" action="{{route('article.search')}}">
                             <input class="form-control me-2" type="search" placeholder="Cosa cerchi?" aria-label="Search" name="query">
-                            <button class="btn button-30" type="submit">Cerca</button>
+                            <button class="button-30" type="submit">Cerca</button>
                         </form>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 <div class="container my-3">
     <div class="row ">
-        <div class="card border-warning mb-3"">
+        <div class="card border-warning mb-3">
             <img src="{{ Storage::url($image) }}" alt="" class="card-image cardBody">
             <div class="card-body">
                 <h5 class="card-title primaryFont text-capitalize">{{ $title }}</h5>
@@ -24,7 +24,7 @@
             </div>
             
             <div class="card-footer px-0 ps-2 text-muted d-flex justify-content-around align-items-center"> Redatto il {{$data}} da <a class="text-muted text-capitalize" href="{{$urlUser}}">{{$user}}</a>
-                <a href="{{$url}}" class="btn button-30 text-secondary">Leggi</a>
+                <a href="{{$url}}" class="button-30 text-mywhite">Leggi</a>
             </div>
         </div>
         
