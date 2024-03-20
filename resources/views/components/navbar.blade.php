@@ -77,24 +77,24 @@
                 </div>
                 <script language="Javascript">
                     
-    //                 function crea()
-    //                 {
-    //                 for (i = 0; i<crea.arguments.length; i++)
-    //                     this[i + 1] = crea.arguments[i];
-    //                 }
+                    function crea()
+                    {
+                    for (i = 0; i<crea.arguments.length; i++)
+                        this[i + 1] = crea.arguments[i];
+                    }
                     
-    //                 let mesi = new crea('Gennaio','Febbraio','Marzo',
-    //                     'Aprile','Maggio','Giugno','Luglio','Agosto','Settembre',
-    //                     'Ottobre','Novembre','Dicembre');
-    //                 let date = new Date();
-    //                 let gg  = date.getDate();
-    //                 let mese = date.getMonth();
-    //                 let yy = date.getYear();
-    //                 let yyyy = (yy < 1000) ? yy + 1900 : yy;
+                    let mesi = new crea('Gennaio','Febbraio','Marzo',
+                        'Aprile','Maggio','Giugno','Luglio','Agosto','Settembre',
+                        'Ottobre','Novembre','Dicembre');
+                    let date = new Date();
+                    let gg  = date.getDate();
+                    let mese = date.getMonth()+1;
+                    let yy = date.getYear();
+                    let yyyy = (yy < 1000) ? yy + 1900 : yy;
                     
 
-    //                 document.write(gg + " " + mesi[mese] + " " + yyyy + date);
-    // </script>
+                    document.write(gg + " " + mesi[mese] + " " + yyyy);
+    </script>
             </nav>
         </div>
     </div>
