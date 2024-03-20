@@ -28,6 +28,11 @@
                                         <a class="nav-link primaryFont" href="{{route('revisor.dashboard')}}">Dashboard Revisor</a>
                                     </li>
                                 @endif
+                                @if (Auth::user()->is_writer)
+                                    <li class="nav-item">
+                                        <a class="nav-link primaryFont" href="{{route('writer.dashboard')}}">Dashboard Writer</a>
+                                    </li>
+                                @endif
                                         <li><hr class="dropdown-divider"></li>
                                         <li><a class="dropdown-item primaryFont" href="{{route('careers')}}">Lavora con noi</a></li>
                                         <li><a class="dropdown-item primaryFont" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a></li>
@@ -74,26 +79,26 @@
                         </form>
                     </div>
                 </div>
-                {{-- <script language="Javascript">
+                <script language="Javascript">
                     
-                    function crea()
-                    {
-                    for (i = 0; i<crea.arguments.length; i++)
-                        this[i + 1] = crea.arguments[i];
-                    }
+    //                 function crea()
+    //                 {
+    //                 for (i = 0; i<crea.arguments.length; i++)
+    //                     this[i + 1] = crea.arguments[i];
+    //                 }
                     
-                    let mesi = new crea('Gennaio','Febbraio','Marzo',
-                        'Aprile','Maggio','Giugno','Luglio','Agosto','Settembre',
-                        'Ottobre','Novembre','Dicembre');
-                    let date = new Date();
-                    let gg  = date.getDate();
-                    let mese = date.getMonth();
-                    let yy = date.getYear();
-                    let yyyy = (yy < 1000) ? yy + 1900 : yy;
+    //                 let mesi = new crea('Gennaio','Febbraio','Marzo',
+    //                     'Aprile','Maggio','Giugno','Luglio','Agosto','Settembre',
+    //                     'Ottobre','Novembre','Dicembre');
+    //                 let date = new Date();
+    //                 let gg  = date.getDate();
+    //                 let mese = date.getMonth();
+    //                 let yy = date.getYear();
+    //                 let yyyy = (yy < 1000) ? yy + 1900 : yy;
                     
-                    document.write(gg + " " + mesi[mese] + " " + yyyy);
-                    
-                    </script> --}}
+
+    //                 document.write(gg + " " + mesi[mese] + " " + yyyy + date);
+    // </script>
             </nav>
         </div>
     </div>

@@ -1,6 +1,6 @@
-<div class="container  my-3">
+<div class="container my-3">
     <div class="row ">
-        <div class="card px-0 cardBody">
+        <div class="card border-warning mb-3"">
             <img src="{{ Storage::url($image) }}" alt="" class="card-image cardBody">
             <div class="card-body">
                 <h5 class="card-title primaryFont text-capitalize">{{ $title }}</h5>
