@@ -21,7 +21,12 @@ class Article extends Model
         'user_id',
         'category_id',
         'is_accepted',
+        'slug'
         ];
+
+        public function getRouteKeyName(){
+            return 'slug';
+        }
 
         public function toSearchableArray(){
             return [

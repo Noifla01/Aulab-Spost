@@ -6,6 +6,7 @@ use App\Models\Tag;
 use App\Models\User;
 use App\Models\Article;
 use App\Models\Category;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
@@ -14,7 +15,7 @@ class ArticleController extends Controller
 {
     public function __construct()
     {   
-        $this->middleware('auth')->except('index','show','byCategory','byUser');
+        $this->middleware('auth')->except('index','show','byCategory','byUser' ,'articleSearch');
     }
     /**
      * Display a listing of the resource.
@@ -71,7 +72,8 @@ class ArticleController extends Controller
             'body'=> $request->body,
             'image'=> $request->file('image')->store('public/images'),
             'category_id'=> $request->category,
-            'user_id' => Auth::user()->id
+            'user_id' => Auth::user()->id,
+            'slug' => Str::slug($request->title),
             ]);
 
             $tags = explode(',', $request->tags);
@@ -120,6 +122,7 @@ class ArticleController extends Controller
             'image'=> 'image',
             'category'=> 'required',
             'tags' => 'required',
+            'slug' => Str::slug($request->title),
         ]);
 
         $article->update([
