@@ -17,7 +17,7 @@
     <div class="container my-4">
         <div class="row justify-content-center">
             @foreach ($articles as $article)
-            <div class="col-12 col-md-4 ps-5">
+            <div class="col-12 col-md-4">
                 <x-card
             :tags="$article->tags"
             title="{{ $article->title}}"

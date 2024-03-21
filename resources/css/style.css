@@ -1,3 +1,4 @@
+/* FONT */
 .primaryFont{
     font-family: "Bitter", serif;
 }
@@ -5,7 +6,7 @@
 .secondaryFont{
     font-family: "Angkor", serif;
 }
-
+/* COLORI */
 :root{
     --dark-grey: #3c4650eb;
     --white: #a8aec1;
@@ -22,23 +23,27 @@
 .text-mywhite{
     color: var(--white);
 }
-
+/* BCKGROUND */
 body{
     background: linear-gradient(180deg,rgba(218, 212, 212, 0.391),rgba(170, 162, 162, 0.232)), url(./media/giornali.jpg);
 }
 
 .bg-container{
-background: linear-gradient(180deg,rgba(99, 79, 79, 0.445),rgba(32, 31, 31, 0.5)), url(./media/joe-woods-4Zaq5xY5M_c-unsplash.jpg);
+background: linear-gradient(180deg,rgba(99, 79, 79, 0.445),rgba(32, 31, 31, 0.5)), url(./media/scott-webb-UjupleczBOY-unsplash.jpg);
+}
+/* NAVBAR */
+.navbar{
+    background-image: linear-gradient(180deg,rgba(77, 74, 74, 0.452),rgba(0, 0, 0, 0.473)),url(./media/scott-webb-UjupleczBOY-unsplash.jpg);
 }
 
 .nav-item{
     list-style-type: none;
 }
 
-.navbar{
-    background-image: linear-gradient(180deg,rgba(77, 74, 74, 0.452),rgba(0, 0, 0, 0.473)),url(./media/scott-webb-UjupleczBOY-unsplash.jpg);
+.data{
+    padding-right: 0px;
 }
-
+/* HEADER */
 h1{
     letter-spacing: 10px;
 }
@@ -46,24 +51,30 @@ h1{
 .h1-img{
     background-image: linear-gradient(180deg,rgba(77, 74, 74, 0.452),rgba(0, 0, 0, 0.473)),url(./media/scott-webb-UjupleczBOY-unsplash.jpg);
 }
-
+/* CARD */
 .cardBody{
     height: 500px;
     width: 350px;
     border: 0;
+    transform: scale(1);
+    transition: 0.5s ease;
+}
+
+.cardBody:hover{
+    transform: scale(1.04);
 }
 
 .card-img{
     height: 300px;
     width: 350px;
-
 }
 
 .bgcard{
     background-color: rgb(120, 120, 125);
 }
-
+/* BUTTON */
 .button-30 {
+    text-decoration: none;
     color: var(--white);
     align-items: center;
     background-color: var(--dark-grey);
@@ -120,7 +131,7 @@ a::after {
 a:hover::after {
     transform: scaleX(1);
 }
-
+/* FORM */
 .form-box{
     position: relative;
     width: 600px;
