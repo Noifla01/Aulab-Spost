@@ -1,7 +1,7 @@
 <x-layout>
-    <div class="container-fluid p-5 bg-info text-center text-white">
-        <div class="row justify-content-center">
-            <h1 class="display-1">
+    <div class="container h1-img mt-1">
+        <div class="row justify-content-center text-center py-5">
+            <h1 class="display-5 fw-bold secondaryFont">
                 Bentornato Admin
             </h1>
         </div>

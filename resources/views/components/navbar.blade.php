@@ -75,7 +75,7 @@
                     <div class="col-12 col-md-3">
                         <form class="d-flex" method="GET" action="{{route('article.search')}}">
                             <input class="form-control me-2" type="search" placeholder="Cosa cerchi?" aria-label="Search" name="query">
-                            <button class="button-30" type="submit">Cerca</button>
+                            <a href=""><button class="button-30" type="submit">Cerca</button></a>
                         </form>
                     </div>
                 </div>

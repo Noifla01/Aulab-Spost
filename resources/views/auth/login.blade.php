@@ -1,16 +1,16 @@
 <x-layout>
 
-    <div class="container">
-        <div class="row">
+    <div class="container h1-img mt-1">
+        <div class="row justify-content-center text-center py-5">
             <div class="col-12 col-md-6">
-                <h1 class="display-1">Accedi!</h1>
+                <h1 class="display-5 fw-bold secondaryFont">Accedi!</h1>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
+    <div class="container vh-100 mt-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-6 mt-5 ">
                 @if ($errors->any())
                     <div class="alert alert-danger">
                         <ul>
@@ -21,21 +21,21 @@
                     </div>
                 @endif
 
-                <form class="card p-5 shadow" action="{{route('login')}}" method="post">
+                <form class="card px-5 form-box" action="{{route('login')}}" method="post">
                     @csrf
 
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
+                    <div class="mb-3 pb-4 inputbox">
+                        <label for="email" class="form-label fs-5">Email</label>
                         <input name="email" type="email" class="form-control" id="email" value="{{old('email')}}">
                     </div>
 
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
+                    <div class="mb-3 pb-4 inputbox">
+                        <label for="password" class="form-label fs-5">Password</label>
                         <input name="password" type="password" class="form-control" id="Password">
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Accedi</button>
-                    <p class="small mt-2">Non sei registrato?<a href="{{route('register')}}">Clicca qui!</a></p>
+                    <button type="submit" class="btn button-30 bg-secondary">Accedi</button>
+                    <p class="small mt-3">Non sei registrato?<a href="{{route('register')}}">Clicca qui!</a></p>
                 </form>
 
             </div>

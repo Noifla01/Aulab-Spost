@@ -1,7 +1,7 @@
 <x-layout>
     
-    <div class="container h1-img mt-2">
-        <div class="row justify-content-center text-center  py-5 ">
+    <div class="container h1-img mt-1">
+        <div class="row justify-content-center text-center py-5">
             <div class="col-12 col-md-6 ">
                 <h1 class="display-5 fw-bold secondaryFont"> Tutti gli articoli </h1>
             </div>
