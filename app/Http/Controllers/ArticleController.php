@@ -58,12 +58,11 @@ class ArticleController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title'=> 'required|unique:articles|min:7',
-            'subtitle'=>'required|min:7',
+            'title'=> 'required|unique:articles|min:7|max:90',
+            'subtitle'=>'required|min:7|max:100',
             'body'=> 'required|min:15',
             'image'=> 'image|required',
             'category'=> 'required',
-            'tags' => 'required',
         ]);
 
         $article = Article::create([
@@ -116,12 +115,11 @@ class ArticleController extends Controller
 
     {
         $request->validate([
-            'title'=> 'required|min:7|unique:articles,title'.$article->id,
-            'subtitle'=>'required|min:7',
+            'title'=> 'required|min:7|max:90|unique:articles,title' . $article->id,
+            'subtitle'=>'required|min:7|max:100',
             'body'=> 'required|min:15',
             'image'=> 'image',
             'category'=> 'required',
-            'tags' => 'required',
             'slug' => Str::slug($request->title),
         ]);
 
@@ -135,11 +133,12 @@ class ArticleController extends Controller
             if($request->image){
                 Storage::delete($article->image);
                 $article->update([
-                    'image' => $request->file('image')->store('public/image')
+                    'image' => $request->file('image')->store('public/images')
                 ]);
             }
 
             $tags = explode(',', $request->tags);
+            
             foreach ($tags as $i => $tag) {
                 $tags[$i] = trim($tag);
             }

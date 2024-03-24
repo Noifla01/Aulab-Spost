@@ -15,7 +15,7 @@
 </head>
 <body>
     
-    <div class="container bg-container px-0 pb-2">
+    <div class="container bg-container px-0 pb-2 vh-100">
         <x-navbar />
         {{$slot}}
     </div>

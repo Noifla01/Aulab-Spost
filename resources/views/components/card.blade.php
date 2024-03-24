@@ -4,7 +4,7 @@
             <img src="{{ Storage::url($image) }}" alt="" class="card-img">
             <div class="card-body">
                 <h5 class="card-title primaryFont text-capitalize d-flex justify-content-center">{{ $title }}</h5>
-                <p class="card-text primaryFont text-capitalize"> {{ $subtitle }}</p>
+                <p class="card-text primaryFont text-capitalize overflow-hidden"> {{ $subtitle }}</p>
                 @if($category)
                     <span>
                         <a href="{{$urlCategory}}" class="small text-muted d-flex justify-content-center align-items-center"> {{$category}}</a>
