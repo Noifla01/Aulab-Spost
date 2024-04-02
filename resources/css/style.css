@@ -30,6 +30,7 @@ body{
 
 .bg-container{
     background: linear-gradient(180deg,rgba(99, 79, 79, 0.445),rgba(32, 31, 31, 0.5)), url(./media/joe-woods-4Zaq5xY5M_c-unsplash.jpg);
+    min-height: 65rem;
 }
 /* NAVBAR */
 .navbar{

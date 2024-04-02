@@ -15,11 +15,11 @@
             <td>{{$article->user->name}}</td>
             <td>
                 @if (is_null($article->is_accepted))
-                <a href="{{route('article.show', compact('article'))}}" class="btn btn-info text-white">Leggi l'articolo</a>
+                <a href="{{route('article.show', compact('article'))}}" class="btn button-30 btn-success text-white">Leggi l'articolo</a>
                 @else
                 <form action="{{route('revisor.undoArticle', compact('article'))}}" method="POST" >
                     @csrf
-                    <button class="btn button-30 text-danger">Riporta in revisione</button>
+                    <button class="btn button-30 btn-danger text-white">Riporta in revisione</button>
                 </form>
                 @endif
             </td>

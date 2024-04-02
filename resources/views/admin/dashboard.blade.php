@@ -63,7 +63,7 @@
                 <form action="{{route('admin.storeCategory')}}" class="d-flex" method="POST">
                     @csrf
                     <input type="text" name="name" class="form-control me-2" placeholder="Inserisci una nuova categoria">
-                    <button type="submit" class="btn btn-success text-white">Aggiungi</button>
+                    <button type="submit" class="btn button-30 bg-secondary">Aggiungi</button>
                 </form>
             </div>
         </div>
